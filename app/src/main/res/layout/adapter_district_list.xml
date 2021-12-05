@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/iv_district"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_img"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <TextView
+        android:id="@+id/tv_district_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_margin"
+        style="@style/TitleStyle"
+        app:layout_constraintStart_toEndOf="@+id/iv_district"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="district name" />
+
+    <TextView
+        android:id="@+id/tv_district_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_margin"
+        android:layout_marginEnd="@dimen/view_margin"
+        android:layout_marginBottom="@dimen/view_margin"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@+id/iv_arrow"
+        app:layout_constraintStart_toEndOf="@+id/iv_district"
+        app:layout_constraintTop_toBottomOf="@+id/tv_district_name"
+        tool:text="district info" />
+
+    <TextView
+        android:id="@+id/tv_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_margin"
+        android:textColor="@color/color_memo_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_district"
+        app:layout_constraintTop_toBottomOf="@+id/tv_district_info"
+        tool:text="memo" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_arrow_forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

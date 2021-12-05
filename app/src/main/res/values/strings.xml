@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TaipeiZoo</string>
+
+    <string name="msg_none_opening_hours">無休館資訊</string>
+    <string name="msg_no_data_available">查無相關資訊</string>
+
+    <string name="tab_title_district">展區資訊</string>
+    <string name="tab_title_plants">植物資訊</string>
+
+    <string name="btn_open_web">開啟網頁</string>
+
+    <string name="tv_title_also_known">別名</string>
+    <string name="tv_title_brief">簡介</string>
+    <string name="tv_title_feature">辨認方式</string>
+    <string name="tv_title_func_and_app">功能性</string>
+    <string name="tv_title_last_update">最後更新</string>
+
+    <string name="dialog_title_error">Oops!錯誤</string>
+    <string name="dialog_confirm">確定</string>
+</resources>

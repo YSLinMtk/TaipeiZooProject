@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_navigation"
+    app:startDestination="@id/navi_district">
+
+    <fragment
+        android:id="@+id/navi_district"
+        android:name="com.ann.taipeizoo.view.fragment.TPEZooFragment"
+        android:label="District"
+        tools:layout="@layout/fragment_tpezoo" >
+        <action
+            android:id="@+id/action_to_district_detail"
+            app:destination="@id/navi_district_detail"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navi_district_detail"
+        android:name="com.ann.taipeizoo.view.fragment.DistrictInfoFragment"
+        android:label="District Detail"
+        tools:layout="@layout/fragment_district_info" >
+        <action
+            android:id="@+id/action_navi_district_info_to_navi_plant_detail"
+            app:destination="@id/navi_plant_detail"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navi_plant_detail"
+        android:name="com.ann.taipeizoo.view.fragment.PlantDetailFragment"
+        android:label="Plant Detail"
+        tools:layout="@layout/fragment_plant_detail">
+
+        <action
+            android:id="@+id/action_navi_plant_detail_to_navi_distric_detail"
+            app:destination="@id/navi_district_detail"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
+    </fragment>
+</navigation>
